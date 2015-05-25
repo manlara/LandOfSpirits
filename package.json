@@ -1,0 +1,42 @@
+{
+  "name": "teamphamfini",
+  "version": "0.0.1",
+  "author": "Manuel Lara",
+  "contributors": {
+    "name": "Zina Semenova",
+    "email": "zi_zind@hotmail.com"
+  },
+  "description": "Wedding site for Alfonse and Cara",
+  "scripts": {
+    "dev": "grunt dev",
+    "preview": "grunt previewSite",
+    "deployProduction": "grunt deployProduction"
+  },
+  "dependencies": {
+    "moment": "2.3.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "browserify-shim": "^3.8.5",
+    "connect": "^3.3.5",
+    "connect-livereload": "^0.5.3",
+    "fs": "0.0.2",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-browserify2": "^0.1.8",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ejs": "^0.3.0",
+    "grunt-shell": "^1.1.2",
+    "https": "^1.0.0"
+  }
+}

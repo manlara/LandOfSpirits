@@ -1,0 +1,24 @@
+{
+  "name": "AlfonseCaraWeddingSite",
+  "version": "0.0.1",
+  "homepage": "teamphamfini.com",
+  "description": "a wedding site for alfonse and cara using grunt and ejs",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "ejs",
+    "js",
+    "jquery",
+    "grunt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies":{
+    "bootstrap":"latest",
+    "jquery":"latest"
+  }
+}

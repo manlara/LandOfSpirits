@@ -1,0 +1,162 @@
+@import 'bootstrap.less';
+@import 'jquery.bxslider.less';
+
+
+@font-family-sans-serif: "Open Sans", sans-serif;
+//btn
+@boder-color: 2px solid #FFF;
+@background-color:black;
+
+html, body {
+    overflow-x: hidden;
+}
+
+// Navbar Styles
+// _____________
+.navbar-brand{
+    margin-top: -15px;
+}
+.los-navbar{
+    margin-bottom: 20px;
+}
+.los-nav{
+    list-style: none;
+    padding: 10px 0;
+    li{
+        margin: 0 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #758E2B;
+        float: left;
+        padding: 10px 20px;
+        a{
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+}
+
+// Sections
+.section-bg{
+    background: url(../img/gallery-landscapes/tree-on-the-hill.jpg) no-repeat center center; 
+    background-size: cover;
+    .los-title{
+        width: 100%;
+        margin-top: 300px;
+        color: #FFF;
+        font-weight: bold;
+        .center-block();
+        text-align: center;
+    }
+    .fade-bg{
+        background-color: red;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.crew-descr{
+    span{
+        .center-block();
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.section-crew{
+
+}
+
+.section-StoryPanel{
+    .StoryPanelCol{
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%;
+        height: 600px;
+        margin:0;
+        padding:0px;
+        //padding-bottom: 300px;
+        position: relative;
+        // Style this button
+        .StoryPanelButton{
+            position: absolute;
+            width: 50%;
+            bottom: 10%;
+            left: 25%;
+        }
+    }
+    .StoryPanelPics{
+        margin: 200px auto 0 auto;
+        height:200px;
+    }
+    .circular {
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+    }
+    .StoryPanel-descr{
+        color: white;
+        margin-top: 20px;
+        span{
+            .center-block();
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+
+// Styles for stories
+.StoryImg(){
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 50%;
+    height: auto;
+
+    /* Set up positioning */
+    //position: fixed;
+    top: 0;
+    left: 0;
+}
+.StoryPage1{
+    color: white;
+    img{
+        .StoryImg();
+    }
+    span{
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    p{
+        top: 30%;
+        right: 10%;
+        position: absolute;
+        font-size: 16px;
+    }
+}
+
+.StoryPage{
+    position: relative;
+    color: white;
+    img{
+        position: absolute;
+        .StoryImg();
+        z-index: -1;
+    }
+    span{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+    }
+}
