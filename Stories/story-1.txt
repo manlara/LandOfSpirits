@@ -1,0 +1,20 @@
+###########
+Picture: assets/img/story-1/taiga-pattern.jpg, same
+Text: during our journey we, same
+ID: none, same
+Class: col-md-6 StoryBg StoryBgBorder, same
+###########
+
+###########
+Picture: assets/img/story-1/taiga-pattern.jpg, same
+Text: during our journey we, same
+ID: none, same
+Class: col-md-6 StoryBg StoryBgBorder, same
+###########
+
+###########
+Picture: assets/img/story-1/taiga-pattern.jpg, same
+Text: during our journey we, same
+ID: none, same
+Class: col-md-6 StoryBg StoryBgBorder, same
+###########
