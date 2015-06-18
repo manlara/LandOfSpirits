@@ -1,0 +1,112 @@
+###########
+Picture: assets/img/story-3/taiga.jpg
+Text: <p><h3>Dalny Kezek</h3>a small settlement deep in taiga, ~5 kilometers from Ust-Anzas.Only three families live there. Grandma Zoe one of them.</p>
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/stream.jpg
+Text: Once a week Zoe makes bread.<br>In order to buy ingredients, she gets on her horse and rides through taiga.<br>The horse knows in which spot better to cross Anzas river<br> At this point the horse is thirsty and<br>she has to wait until her companion drinks enough water.
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/zoya-horse.jpg
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/horse-waits.png
+Text: Zoe goes inside. The horse is chilling out
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/romashka-pattern.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/helicopter-close-up.png
+Text: Once a week the helicopter arrives and brings supplies for the store<br>Inhabitans come and help to unload the boxes<br>Entire village helps to bring them to the store.
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+
+###########
+Picture: assets/img/story-3/in-store.png
+Text: The store is located in wooden hut in the middle of the village.<br>Zoe gets canned stewed beef, some eggs and flour.
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/zoya-buys.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/on-boat.png
+Text: She also gets the chance to say hi to her friends on another side of the river<br>Waterman give her a ride.
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/zoya-horse-panorama.jpg
+Text: After a few visits puts stuff in her sack and goes back to the village<br>In the evening she has a lot of things to do:help with hay, milk the cow and pour the vegetable garden.
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/pines-pattern.jpg
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/zoya-is-making-bread.jpg
+Text: Next morning it starts
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/bread-inside-of-stove.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/bread-day.jpg
+Text: In parallel with bread,<br>in the traditional kitchen downstairs the soup is getting ready.
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-3/kitchen-with-fire.jpg
+Text: none
+ID: none
+Class: col-md-12 StoryBg  fixed
+###########
+
+###########
+Picture: assets/img/story-3/aigan-evening.png
+Text: Zoe is one of the last people who fluently speaks Shor<br>Her lifestyle together with other inhabitants of Dalny Kezek never changed since 18 century<br>They still heavily rely on hunt, berry picking, pine nuts harvesting,gardening and fishing.<br>Shors have their own names for toponims, herbs and animals that unique for this region.<br>This knowledge can dissapear from the world in one generation or two.
+ID: none 
+Class: col-md-12 StoryBg 
+###########

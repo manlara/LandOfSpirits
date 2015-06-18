@@ -1,20 +1,83 @@
 ###########
-Picture: assets/img/story-1/taiga-pattern.jpg, same
-Text: during our journey we, same
-ID: none, same
-Class: col-md-6 StoryBg StoryBgBorder, same
+Picture: assets/img/story-1/nikolay-taks.jpg| assets/img/story-1/hands-with-fire.jpg
+Text: none| Before going to taiga we light a fire and feed spirits
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder| same
 ###########
 
 ###########
-Picture: assets/img/story-1/taiga-pattern.jpg, same
-Text: during our journey we, same
-ID: none, same
-Class: col-md-6 StoryBg StoryBgBorder, same
+Picture: assets/img/story-1/taiga-pattern.jpg
+Text: during our journey we
+ID: none
+Class: col-md-12 StoryBg fixed
 ###########
 
 ###########
-Picture: assets/img/story-1/taiga-pattern.jpg, same
-Text: during our journey we, same
-ID: none, same
-Class: col-md-6 StoryBg StoryBgBorder, same
+Picture: assets/img/story-1/taiga-tree.jpg
+Text: made our way through taiga with centenary cedars
+ID: none
+Class: col-md-12 StoryBg fixed
+###########
+
+###########
+Picture: assets/img/story-1/taz_gol.jpg| assets/img/story-1/taz_gol.jpg
+Text: none| Climbed Taz Gol mount
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder| same
+###########
+
+###########
+Picture: assets/img/story-1/raising-cloud.jpg| assets/img/story-1/manuel-in-tazgol.jpg
+Text: none| Climbed Taz Gol mount
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder| same
+###########
+
+###########
+Picture: assets/img/story-1/vera-saryn.jpg
+Text: made friends with husky dog named Saryn
+ID: none
+Class: col-md-12 StoryBg fixed
+###########
+
+###########
+Picture: assets/img/story-1/rock-water.jpg
+Text: made friends with husky dog named Saryn
+ID: none
+Class: col-md-12 StoryBg
+###########
+
+###########
+Picture: assets/img/story-1/mountain.jpg
+Text: none
+ID: none
+Class: col-md-12 StoryBg
+###########
+
+###########
+Picture: assets/img/story-1/on-board.jpg
+Text: drifted 10k kilometers down Mras Su river
+ID: none
+Class: col-md-12 StoryBg fixed
+###########
+
+###########
+Picture: assets/img/story-1/shishka.jpg
+Text: tried new harverst of pine nuts
+ID: none
+Class: col-md-12 StoryBg fixed
+###########
+
+###########
+Picture: assets/img/story-1/mike-with-mushroom.jpg
+Text: and mushrooms
+ID: none
+Class: col-md-12 StoryBg
+###########
+
+###########
+Picture: assets/img/story-1/pattern-yellow-flower.jpg
+Text: <p style="left:60%;padding">test</p>and shot videos like this one
+ID: none
+Class: col-md-12 StoryBg
 ###########

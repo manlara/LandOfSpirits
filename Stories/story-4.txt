@@ -1,0 +1,80 @@
+###########
+Picture: assets/img/story-4/moon.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/river-smog.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/forest-smog.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/king-and-motor.png
+Text: This man's name is Mikhail but everybody knows him as King.<br>King is an expert in navigating the Mras-Su river.
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+
+###########
+Picture: assets/img/story-4/fixes-motor.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+
+###########
+Picture: assets/img/story-4/kuvshinki.jpg
+Text: "That morning I went down the river.<br>It was early and there was a fog<br>I just turned on the left near the island.<br>There was a big stone.<br>And they stood there.<br>Two of them<br>The hair below the knee.<br>They were so beautiful. Terrifyingly beautifyl<br>Their hair shined and in their hands they hold a comb.<br>I turned<br>Looked behind<br>Nothing. Dissapeared<br>Since then I never go when it is a fog on the river."
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/rock.jpg
+Text: none
+ID: none 
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/water-river.jpg
+Text: none
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+###########
+Picture: assets/img/story-4/rock-kuvshinki.jpg
+Text: For Shors to see mermaid is a bad sign<br>They believe that mermaid meets people to steal their soul.<br>After that encounter King got sick.<br>He is the one of a few who survived the encounter with the river spirits.
+ID: none, 
+Class: col-md-12 StoryBg 
+###########
+
+
+###########
+Picture: assets/img/story-4/king-boat-turn.png
+Text: none
+ID: none
+Class: col-md-12 StoryBg 
+###########
+
+
+###########
+Picture: assets/img/story-4/kuvshinki-king.png
+Text: none
+ID: none
+Class: col-md-12 StoryBg 
+###########
