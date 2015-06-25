@@ -8,18 +8,61 @@
         <link rel="stylesheet" href="assets/css/app.css">
         <link rel="author" href="humans.txt">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+        <script type="text/javascript">
+        var map;
+        var myCenter=new google.maps.LatLng(37.34832, -121.9431121);
+        function initialize() {
+            var mapOptions = { 
+                center: new google.maps.LatLng(37.34832, -121.9431121),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            var marker=new google.maps.Marker({
+                position:myCenter,
+                title:"Hello World!"
+                });
+
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            //map2 = new google.maps.Map(document.getElementById('map2-canvas'), mapOptions);
+
+            marker.setMap(map);
+        }
+         google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body>
 
     <div class="section-bg">
         <% include partials/navbar.ejs %>
-        <span class="los-title">
+        <div class="los-title">
             Land of Spirits
-        </span>
-        <div class="fade-bg"></div>
+        </div>
+    </div>
+    <div class="about">
+        <h3>About</h3>
+        <p>Land of Spirits is a media project about endangered Shor people initiated by a small group of creatives. In the summer of 2013 they made a trip to the South of Western Siberia. There, deep in taiga, far away from civilization, more than 100 km from the nearest highway they visited Ust-Anzas village. The traditional lifestyle of Shors in Ust-Anzas is preserved almost untouched for centuries. They grow their own food in gardens, hunt on bears and moose, fish, pick pine nuts, wild berries and mushrooms. Some - have bees and delicious honey, most all have boats - major transport in Ust-Anzas.</p>
+        <p>
+            Every family has a few horses, cows and huski dogs. We met them in the busiest time of the year - July. Shors call July “pichen” which translates as a month of hay.
+Throughout most of our stay we witnessed how they prepared hay. With this harvest of hay their animals can survive another year.
+        </p>
+        <p>
+            We had no idea what was in store for us in Shoria but we were lucky to meet humble people that let us stay in their houses for free. In fact, one of our hoses - Grisha - moved out and slept in the storage area so that we could stay in the small house.
+We arrived unexpectedly but the people there gave us to try food, showed us around in exchange for a few shots of vodka. Living there among them made us realize how difficult it is to find secluded places like this one with untouched nature. These people do not have much of material things but they breath fresh air full of phito elements, eat a healthy diet and drink pure water from the springs. It makes them rich in a different way.
+        </p>
+        <p>
+            The major goal of our trip was to find stories about spirits. It is known that in the past Shors were animists. They worshiped the spirits of water “sug-ezi”, places, taiga ‘tag ezi” and had shamanic practices. We kept asking them about spirits. It was not easy but nevetherless we managed to record few fascinating stories.
+        </p>
+        <p>
+            We want to share our trip with you.
+        </p>
     </div>
 
     <div class="section-crew">
+        <h3>Crew</h3>
 
         <% for(var i=0; i<crewPics.length; i++) {%>
             <%if (i==0 || (i+1)%4==0 && (i+1)!=crewPics.length){%>
@@ -38,7 +81,40 @@
         <% } %>
 
     </div>
+    
+<!--MAP--> 
+<!--
+    <div class="index-map">
+        <h3>Map</h3>
+        <div id="map-canvas" class="center-block" style="width:500px;height:380px;"></div>
+    </div>
+--> 
+    
+<!--TRAILER-->
+    <div class="section-trailer">
+        <div class="trailer-descr show">
+            <img class="img-responsive trailer-img" src="assets/img/video-img.jpeg" alt="">
+            <span class="section-title">Watch the Trailer</span>
+        </div>
+        <div class="trailer-vid" id="videoContainer">
+        </div>
         
+        <!--video-img.jpeg-->
+        <!--
+        
+        -->
+    </div><!--/section-pic-->   
+        
+        <!--video-img.jpeg-->
+        <!--
+        <iframe class="embed-responsive-item embed-video center-block" width="1120" height="630" src="https://www.youtube.com/embed/vuOCLh3yFGM" frameborder="0" allowfullscreen></iframe>
+        -->
+    </div><!--/section-pic-->   
+
+    <div class="brief-history">
+        <h3>Brief History of Shors</h3>
+        <span><a href="https://medium.com/@id_z/a-brief-history-of-shors-ee713cb6f673" target="_blank">Read on medium</a></span>
+    </div>
 
     <div class="section-StoryPanel container-fluid">
         <div class="row">
@@ -47,455 +123,172 @@
                     <img class="StoryPanelPics circular img-responsive" src="assets/img/circles/<%=StoryPanelPics[i]%>" alt="">
                     <div class="StoryPanel-descr">
                         <span><%=StoryPanelPicsName[i]%></span>
-                        <p><%=StoryPanelPicsDesc[i]%></p>
+                        <p><%-StoryPanelPicsDesc[i]%></p>
                     </div>
-                    <a href="#" class="StoryPanelButton btn btn-default"> Find Out More</a>
+                    <a href="https://medium.com/@id_z/<%=StoryPanelPicsLink[i]%>" class="StoryPanelButton btn btn-default" target="_blank"> Read More</a>
                 </div>
             <%}%>
         </div>
     </div>
 
 
-<!--MAIN-->  
-        <a name="home"></a>
-            <div class="main-bg">
-                <div class="row">
-                  <div class="col-md-12">
-                      <span class="title center-block">Land Of Spirits</span>
-                  </div>
-              </div>  
-            </div>
-                
-            
-
-<!--PARTICIPANTS-->   
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="story-about center-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
-            
-        
-<!--MAP--> 
-       
-            <div class="row">
-                <div class="col-md-12">
-                    <img class="map" src="#" alt="" width="400" height="400">
-                </div>
-            </div><!--/.row-->
-        </div><!--/.container-->
-            
-       
-<!--TRAILER-->       
-
-        <div class="section-pic section-trailer">
-            <div class="section-container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title trailer-position center-block">Trailer</div>
-                        <iframe class="embed-responsive-item embed-video center-block" width="1120" height="630" src="https://www.youtube.com/embed/vuOCLh3yFGM" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div><!--/.row-->
-            </div><!--/.section-container-->
-        </div><!--/section-pic-->   
-
-<!--CHOOSE LANGUAGE--> 
-
-        <div class="section-pic section-language">        
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Please select your language</div>
-                </div>
-            </div><!--/.row-->
-            <div class="row">    
-                <div class="col-md-6">
-                    <div class="btn btn-language">English</div>
-                </div>    
-                 <div class="col-md-6">
-                    <div class="btn btn-language">Русский</div>
-                </div>
-            </div><!--/.row-->
-        </div><!--/section-pic-->
-
-<!--INTRO-->        
-
-        <div class="section-pic section-pic-intro">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title center-block">Shors: Who Are They?</div>
-                    </div>    
-                </div><!--/.row-->
-
-                <div class="row">
-                    <div class="col-md-12">
-                       <p class="story-descr story-attr">creative non-fiction stories inspired by land and people of Shoria</p>
-                    </div>    
-                </div><!--/.row-->
-
-                <div class="row">
-                    <div class="col-md-12 col-md-offset-5">
-
-                      <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                    </div>
-                </div><!--/.row-->
-        </div><!--/section-pic-->
-
-<!--1ST STORY-->    
-
-         <div class="section-pic section-pic-1">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Shor King</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story-attr">how we went to the end of the world and met a Shor King</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12 col-md-offset-5">
-
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                </div>
-            </div><!--/.row-->
-
-        </div><!--/section-pic-->
-        
-
-<!--2ND STORY-->          
-
-        <div class="section-pic section-pic-2">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Ust-Anzas</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story-attr">How the crew spent a first night in the Ust Anzas village and met the best hay makers of the region</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12 col-md-offset-5">
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>       
-                </div>
-            </div><!--/.row-->
-
-        </div><!--/section-pic->
-
-<!--3RD SRORY-->  
-
-         <div class="section-pic section-pic-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Taiga Exploration</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story attr">how we went to the remote village, Dalny Kezek, where nothing has changed since 18 century.</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-
-                <div class="col-md-12 col-md-offset-5">
-
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                </div>
-
-            </div><!--/.row-->
-
-        </div><!--/section-pic-->
-
-<!--4TH STORY-->  
-        
-        <div class="section-pic section-pic-4">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Bread Day</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story attr">meet with us a brave Shor grandma Zoya and let's ride with her to the nearest store</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12 col-md-offset-5">
-
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                </div>
-            </div><!--/.row-->
-
-        </div><!--/section-pic-->
-
-<!--5TH STORY-->   
-
-        <div class="section-pic section-pic-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">Enchanted Mountain, Mermaid and Other Mysteries</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story attr">How we investigated Shor spirits</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12 col-md-offset-5">
-
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                </div>
-            </div><!--/.row-->
-<!--6TH STORY-->  
-        </div><!--/section-pic-->
-
-        <div class="section-pic section-pic-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title center-block">The Return</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="story-descr story attr">how we got back to civilization and what we learned</p>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12 col-md-offset-5">
-
-                    <a class="btn btn-medium" target="_blank" href="https://medium.com/@id_z/d3477e081543">Read On Medium</a>
-                       
-                </div>
-            </div><!--/.row-->
-
-        </div><!--/section-pic-->
-
 <!--GALLERY-->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="section-title section-gallery center-block">Gallery</span>
+            <div class="section-gallery">
+                <h3>Gallery</h3>
+                <a href="#">Click here to see more pictures</a>  
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/galleryIndex/luba-violet-flowers.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/galleryIndex/king-flower.png" alt="">
+                    </div>
                 </div>
-            </div><!--/.row-->
-
-            <div class="row">
-                  <div class="col-md-12">
-                    <a class="gallery-link center-block" href="#">Click here to see more pictures</a>  
-                  </div>
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="#" alt="img-1">
-                    <img src="#" alt="img-2">  
+                <div class="center-block">
+                    <img src="assets/img/galleryIndex/eldar.png" alt="">
                 </div>
-                <div class="col-md-6">
-                    <img src="#" alt="img-3">
-                    <img src="#" alt="img-4">  
+                <div class="row" style="margin-top:-30px;">
+                    <div class="col-md-6">
+                        <img src="assets/img/galleryIndex/fedya.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/galleryIndex/happy-dog.png" alt="">
+                    </div>
                 </div>
-            </div><!--/.row-->  
-
-            <div class="row">
-                  <div class="col-md-12">
-                    <img src="#" alt="img-center">
-                  </div>
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="#" alt="img-5"> 
-                </div>
-                <div class="col-md-6">
-                    <img src="#" alt="img-6"> 
-                </div>
-            </div><!--/.row-->
+            </div>
         
-
+        </div>
+        <% include partials/social.ejs %>
 <!--THANKS-->
 
-        <div class="section-pic">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title section-thanks center-block">Thanks</div>
-                </div>    
-            </div><!--/.row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                   <p class="thanks-descr center-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>    
-            </div><!--/.row--> 
-
-            <div class="row">
-                <div class="col-md-3">
-                    <i class="icon-thanks">Icon</i>
-                </div>    
-
-                <div class="col-md-3">
-                   <i class="icon-thanks">Icon</i>
-                </div>    
-    
-                <div class="col-md-3">
-                   <i class="icon-thanks">Icon</i> 
-                </div> 
-                <div class="col-md-3">
-                   <i class="icon-thanks">Icon</i> 
-                </div>    
-            </div><!--/.row-->
-            
-            <div class="row">
-                <div class="col-md-3">
-                    <p class="col-title">Shor Community</p>
-                    <ul class="thanks-list list-unstyled">
-                        <li>Nadezhda Kydymaeva</li>
-                        <li>Lubov Arbachakova</li>
-                        <li>Dmitry Zotov</li>
-                        <li>Chiltys Tannagasheva</li>
-                        <li>Irina Nitkina</li>
-                        <li>Grigory</li>
-                        <li>Evdokiya Topakova</li>
-                        <li>Tatiana (daughter) &amp; family</li> 
-                        <li>Svetlana (Hakassia)</li>
-                        <li>Feodr and his family(bee man) &amp; family</li> 
-                        <li>Gennady Sysoev (driver)</li>
-                        <li>Larisa Ermakova</li>
-                    </ul> 
-                </div>    
-
-                <div class="col-md-3">
-                    <p class="col-title">Volunteers &amp; Backers</p>
-                    <ul class="thanks-list list-unstyled">
-                        <li>Vitaly Miheev</li>
-                        <li>Mariya Lisina</li>
-                        <li>Kristina Yatsenko</li>
-                        <li>Lubov Tselovalnikova</li>
-                        <li>Evgenia Teppoeva</li>
-                        <li>Evgenia Chumakova</li>
-                        <li>Renata Mironova</li> 
-                        <li>Richard Eidman</li>
-                        <li>William Melony &amp; WCNU Radio</li>
-                        <li>Evan Niner</li>
-                        <li>Mike Illis</li>
-                        <li>Evan Adamek</li>
-                        <li>Alexandra Tsirkel</li>
-                        <li>Elena Kiskorova</li>
-                        <li>Anna Hodgekinson</li>
-                    </ul>  
-                </div>    
-    
-                <div class="col-md-3">
-                    <p class="col-title">Extended Team</p>
-                    <ul class="thanks-list list-unstyled"> 
-                        <li>Maria Sudarova</li>
-                        <li>Aleks Klepnev</li>
-                        <li>Alexander Komarov</li>
-                        <li>Anastasia Romanchuka</li>
-                        <li>Emma Baker</li>
-                        <li>Zhoro Zhekov</li>
-                        <li>Adonis Fuyana</li>
-                        <li>Ian Clarke</li> 
-                        <li>Daniel Macfarlane</li>
-                        <li>Aleksis Still</li>
-                    </ul>  
+        <div class="section-thanks">
+            <h3>Thanks</h3>
+            <p>Our crew says thank you for your interest and support to our project. </p>
+            <p>Without you this project would have never been possible.</p>
+            <div class="mount">
+                <div class="row col-title">
+                    <div class="col-md-3">
+                        Shor Community
+                    </div>
+                    <div class="col-md-3">
+                        Volunteers &amp; Backers
+                    </div>
+                    <div class="col-md-3">
+                        Extended Team
+                    </div>
+                    <div class="col-md-3">
+                        Participants Of Promo Video
+                    </div>
                 </div>
-                 <div class="col-md-3">
-                    <p class="col-title">Participants Of Promo Video</p>
-                    <ul class="thanks-list list-unstyled">
+                <div class="row">
+                    <div class="col-md-3" style="margin-bottom:20px;">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                        <img style="margin:0 10px;" src="assets/fonts/png/icon-flower.png" alt="">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                    </div>    
 
-                        <li>Brianne Madrell</li>
-                        <li>Daya Dodds</li>
-                        <li>Lianne Law</li>
-                        <li>Geoff Willis</li>
-                        <li>Shuo Zhang</li>
-                        <li>Megan Hutton</li>
-                        <li>Lilian Jia</li>
-                        <li>Chyntia Fabella Panggabean</li>
-                        <li>Ahmet Ozfitci</li>
-                        <li>Elena Rubio-Hall</li>
-                        <li>Hiren Vyas</li>
-                        <li>Ranjana Easwar</li>
-                        <li>Antoine E. Saade</li>
-                        <li>Daffy Hristova</li>
-                        <li>Satoru &amp; Aya Watanabe</li>
-                        <li>Greg Tomaszewicz</li>
-                        <li>Katucky Outing</li>
-                        <li>Clara Pampolini</li>
-                      
-                    </ul>  
-                    <a href="https://youtu.be/vuOCLh3yFGM" class="save-shor-link">watch the video</a>
-                </div>     
-            </div><!--/.row-->
+                    <div class="col-md-3">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                        <img style="margin:0 10px;" src="assets/fonts/png/icon-flower.png" alt="">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                    </div>    
+        
+                    <div class="col-md-3">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                        <img style="margin:0 10px;" src="assets/fonts/png/icon-flower.png" alt="">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                    </div> 
+                    <div class="col-md-3">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                        <img style="margin:0 10px;" src="assets/fonts/png/icon-flower.png" alt="">
+                        <img src="assets/fonts/png/icon-dot.png" alt="">
+                    </div>    
+                </div><!--/.row-->
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="thanks-list list-unstyled">
+                            <li>Nadezhda Kydymaeva</li>
+                            <li>Lubov Arbachakova</li>
+                            <li>Dmitry Zotov</li>
+                            <li>Chiltys Tannagasheva</li>
+                            <li>Irina Nitkina</li>
+                            <li>Grigory</li>
+                            <li>Evdokiya Topakova</li>
+                            <li>Tatiana (daughter) &amp; family</li> 
+                            <li>Svetlana (Hakassia)</li>
+                            <li>Feodr and his family(bee man) &amp; family</li> 
+                            <li>Gennady Sysoev (driver)</li>
+                            <li>Larisa Ermakova</li>
+                        </ul> 
+                    </div>    
 
-            
-            <div class="row">
-                <div class="col-md-12">
-                   <img src="#" alt="">
-                </div>    
-            </div><!--/.row-->
+                    <div class="col-md-3">
+                        <ul class="thanks-list list-unstyled">
+                            <li>Vitaly Miheev</li>
+                            <li>Mariya Lisina</li>
+                            <li>Kristina Yatsenko</li>
+                            <li>Lubov Tselovalnikova</li>
+                            <li>Evgenia Teppoeva</li>
+                            <li>Evgenia Chumakova</li>
+                            <li>Renata Mironova</li> 
+                            <li>Richard Eidman</li>
+                            <li>William Melony &amp; WCNU Radio</li>
+                            <li>Evan Niner</li>
+                            <li>Mike Illis</li>
+                            <li>Evan Adamek</li>
+                            <li>Alexandra Tsirkel</li>
+                            <li>Elena Kiskorova</li>
+                            <li>Anna Hodgekinson</li>
+                        </ul>  
+                    </div>    
+        
+                    <div class="col-md-3">
+                        <ul class="thanks-list list-unstyled"> 
+                            <li>Maria Sudarova</li>
+                            <li>Aleks Klepnev</li>
+                            <li>Alexander Komarov</li>
+                            <li>Anastasia Romanchuka</li>
+                            <li>Emma Baker</li>
+                            <li>Zhoro Zhekov</li>
+                            <li>Adonis Fuyana</li>
+                            <li>Ian Clarke</li> 
+                            <li>Daniel Macfarlane</li>
+                            <li>Aleksis Still</li>
+                        </ul>  
+                    </div>
+                     <div class="col-md-3">
+                        <ul class="thanks-list list-unstyled">
 
-            <div class="row">
-                <div class="col-md-6">
-                   <img src="#" alt="">
-                </div>    
-            </div><!--/.row-->
+                            <li>Brianne Madrell</li>
+                            <li>Daya Dodds</li>
+                            <li>Lianne Law</li>
+                            <li>Geoff Willis</li>
+                            <li>Shuo Zhang</li>
+                            <li>Megan Hutton</li>
+                            <li>Lilian Jia</li>
+                            <li>Chyntia Fabella Panggabean</li>
+                            <li>Ahmet Ozfitci</li>
+                            <li>Elena Rubio-Hall</li>
+                            <li>Hiren Vyas</li>
+                            <li>Ranjana Easwar</li>
+                            <li>Antoine E. Saade</li>
+                            <li>Daffy Hristova</li>
+                            <li>Satoru &amp; Aya Watanabe</li>
+                            <li>Greg Tomaszewicz</li>
+                            <li>Katucky Outing</li>
+                            <li>Clara Pampolini</li>
+                          
+                        </ul>  
+                    </div>     
+                </div><!--/.row-->
+            </div>
+        </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                   <i class="social-media">FB</i>
-                   <i class="social-media">VK</i>
-                   <i class="social-media">Twitter</i>
-                </div>
-                <div class="col-md-6">
-                    <img src="../assets/img/mount.jpg" alt="">
-                   <span class="copyright">SoulRise Production (c) 2015</span>
-                </div>    
-            </div><!--/.row-->
-        </div><!--/.container-->
+
+        <% include partials/footer.ejs %>
    
 
         <script src="assets/js/app.min.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

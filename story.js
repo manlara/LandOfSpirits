@@ -13,7 +13,8 @@ var TestMe = {
 		fs.readFileSync(filename).toString().split("\n")
 		.forEach(function (line){ 
 			var key = line.split(" ")==undefined ? "" : line.split(" ")[0].replace(":","");
-			var multi_index = line.replace(/"/g,"").replace(key+":","").trim().split(",");
+			//console.log('key: ',key);
+			var multi_index = line.replace(/"/g,"").replace(key+":","").trim().split("|");
 			for (var i=0; i<multi_index.length; i++){
 				
 				multi_index[i] = multi_index[i].trim();
@@ -32,5 +33,5 @@ var TestMe = {
 		return {stories: data_array};
 	}
 }
-TestMe.dataArray("Stories/story-1.txt");
+//TestMe.dataArray("Stories/story-4.txt");
 module.exports = TestMe;
