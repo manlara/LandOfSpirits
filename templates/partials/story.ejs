@@ -1,0 +1,13 @@
+
+<%for (var i=0; i<stories.length; i++){%>
+    <div class="row">
+    <%for (var j=0; j<stories[i].Picture.length; j++){%>
+         <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>" style="background-image:url('<%=stories[i].Picture[j]%>');">
+            <div class="StoryPage">
+                <span><%-stories[i].Text[j]%></span>
+            </div>
+        </div>
+    <%}%>
+    </div>                
+<%}%>
+

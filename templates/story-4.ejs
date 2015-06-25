@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Land of Spirits</title>
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="author" href="humans.txt">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <% include partials/story.ejs %>
+
+
+        <% include partials/social.ejs %>
+
+        <div class="row">
+            <div class="col-md-12">
+                <span class="center-block" style="padding-top:50px;">
+                    <img class="circled-img center-block" src="assets/img/read-on-medium-circles/mike-thinks.png">
+                    <div class="btn-medium"><a href="#">read story on medium</a></div>
+                </span>
+            </div>   
+        </div>
+        
+        <% include partials/footer.ejs %>
+
+        <script src="assets/js/app.min.js"></script>
+        <script>
+            $(window).scroll(function() {
+                var scrolledY = $(window).scrollTop();
+                if (scrolledY<2000) $('#scrollme').css('background-position', 'left ' + ((scrolledY-1000)) + 'px');
+                if (scrolledY<7400 && scrolledY>6000) $('#scrollme2').css('background-position', 'left ' + ((scrolledY+200)) + 'px');
+                $('#scrollme3').css('background-position', 'left ' + ((scrolledY)) + 'px');
+            });
+        </script>
+    </body>
+</html>
