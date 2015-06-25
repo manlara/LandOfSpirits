@@ -11,27 +11,8 @@
     </head>
     <body>
 
-    	<div class="StoryPage">
-    		<img class="img-responsive" src="assets/img/story-1/vera_walks.jpg" alt="">
-			<span>Aigan - sacred mountain</span>
-			<p>~1000 meters above the sea level mountain has 9 peaks...</p>
-    	</div>
-
-        <%for (var i=0; i<stories.length; i++){%>
-            <div class="row">
-            <%for (var j=0; j<stories[i].Picture.length; j++){%>
-                 <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>" style="background-image:url('<%=stories[i].Picture[j]%>');">
-                    <div class="StoryPage">
-                        <span><%-stories[i].Text[j]%></span>
-                    </div>
-                </div>
-            <%}%>
-            </div>                
-        <%}%>
-
-        <div style="">
-            <% include partials/video.ejs %>
-        </div>
+        <% include partials/navbar.ejs %>
+        <% include partials/story.ejs %>
 
         <% include partials/social.ejs %>
 
@@ -45,7 +26,7 @@
         </div>
         
         <% include partials/footer.ejs %>
-        
+
         <script src="assets/js/app.min.js"></script>
         <script>
             $(window).scroll(function() {

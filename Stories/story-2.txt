@@ -1,0 +1,104 @@
+###########
+Picture: assets/img/story-2/ust-anzas-panorama.png
+Text: <p><h3>Ust-Anzas</h3>an ancient settlement of Mountainous Shoria.Shors lived here already in times of Genghis Khan and the Silk Road.We spent 10 days in the village surrounded by pristine taiga, huski dogs and hay makers.</p>
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/hay-makers-panorama.jpg 
+Text: Shors still do hay in an old fashion way.<br>They still do not use electric mowers.<br>Every family has several hills to mow the grass from.<br>On each hill the grass is varied on degrees of readiness.<br> After cutting the grass| they wait for few days<br>and then turn the dried grass over using a special rakes.
+ID: none 
+Class: col-md-12 StoryBg LeftBottom
+###########
+
+###########
+Picture: assets/img/story-2/king-close-up.png
+Text: none
+ID: none 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/hay-people.png
+Text: The mowers work with their scythes quite fast<br>Far away on the open space spreads the rhythmic sound of the scythes<br> The mower's movements are fascinating like a well-rehearsed dance.
+ID: none 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/white-cloud.jpg
+Text: none
+ID: none| 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/black-horse.png
+Text: The horse has been waiting nearby
+ID: none 
+Class: col-md-12 StoryBg
+###########
+
+###########
+Picture: assets/img/story-2/horse-senokos.jpg
+Text: Later they attached the cart full of grass to his back<br> and the hay had been brought to another side of the meadow.
+ID: none| 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/hay-carriers.jpg
+Text:People has been waiting for a horse on another side.<br>They quickly began to disassemble the hay and throw it in a hay stack.
+ID: none
+Class: col-md-12 StoryBg LeftBottom
+###########
+
+###########
+Picture: assets/img/story-2/luba.png
+Text:Luba waited for them under the tree
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/grisha-with-saryn.png
+Text:As well as Grisha with the dog
+ID: none 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/flower-pattern.png
+Text:Time to get some food
+ID: none 
+Class: col-md-12 StoryBg RightBottom
+###########
+
+
+###########
+Picture: assets/img/story-2/luba-cooks-2.png| assets/img/story-2/luba-cooks-1.png
+Text:none| same
+ID: none| same 
+Class: col-md-6 StoryBg StoryBgBorder LeftBottom|  col-md-6 StoryBg StoryBgBorder CenterCenter
+
+###########
+Picture: assets/img/story-2/luba-cooks-3.png| assets/img/story-2/luba-cooks-5.png
+Text:none| same
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder RightTop| same
+###########
+
+###########
+Picture: assets/img/story-2/photo-king.jpg 
+Text:none
+ID: none 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-2/people-eat.png
+Text:none
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########

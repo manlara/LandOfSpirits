@@ -1,0 +1,101 @@
+###########
+Picture: assets/img/story-1/nikolay-talks.jpg| assets/img/story-1/hands-with-fire.jpg
+Text: none| Before going to taiga we light a fire and feed spirits
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder CenterCenter| col-md-6 StoryBg StoryBgBorder LeftBottom
+###########
+
+###########
+Picture: assets/img/story-1/taiga-pattern.jpg
+Text: during our journey we
+ID: none
+Class: col-md-12 StoryBg fixed CenterCenter
+###########
+
+###########
+Picture: assets/img/story-1/taiga-tree.jpg
+Text: made our way through taiga with centenary cedars
+ID: none
+Class: col-md-12 StoryBg fixed LeftBottom
+###########
+
+###########
+Picture: assets/img/story-1/taz_gol.jpg| assets/img/story-1/taz_gol.jpg
+Text: none| Climbed Taz Gol mount
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder RightBottom| same
+###########
+
+###########
+Picture: assets/img/story-1/raising-cloud.jpg| assets/img/story-1/manuel-in-tazgol.jpg
+Text: none| Climbed Taz Gol mount
+ID: none| same
+Class: col-md-6 StoryBg StoryBgBorder CenterCenter| col-md-6 StoryBg StoryBgBorder LeftBottom
+###########
+
+###########
+Picture: assets/img/story-1/vera-saryn.jpg
+Text: made friends with husky dog named Saryn
+ID: none
+Class: col-md-12 StoryBg fixed
+###########
+
+###########
+Picture: assets/img/story-1/rock-water.jpg
+Text: made friends with husky dog named Saryn
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-1/mountain.jpg
+Text: none
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-1/on-board.jpg
+Text: drifted 10 kilometers down Mras Su river
+ID: none
+Class: col-md-12 StoryBg fixed CenterCenter
+###########
+
+
+###########
+Picture: assets/img/story-1/tsar-gates-rain.jpg
+Text: <p><h3>Tsar Gate<h3><br>a hole in the shape of semicircle<br>formed in the rock thousands of years ago<br>by wind, rain and snow.,<br><h4>visited tsar gate</h4></p>
+ID: none
+Class: col-md-12 StoryBg fixed CenterCenter
+###########
+
+
+###########
+Picture: assets/img/story-1/tsar-gates.jpg
+Text:According to Shor legend, a hero Atalay fought his battle<br> with evil guardian Karakhan here.<br>Atalay’s arrow not only shattered the rock<br>but also got directly to the heart of Karakhan<br>and destroyed him. 
+ID: none
+Class: col-md-12 StoryBg fixed LeftBottom
+###########
+
+
+
+###########
+Picture: assets/img/story-1/shishka.jpg
+Text: tried new harverst of pine nuts
+ID: none
+Class: col-md-12 StoryBg fixed CenterCenter
+###########
+
+###########
+Picture: assets/img/story-1/mike-with-mushroom.jpg
+Text: and mushrooms
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: assets/img/story-1/pattern-yellow-flower.jpg
+Text: and shot videos like this one
+ID: none
+Class: col-md-12 StoryBg CenterCenter
+###########

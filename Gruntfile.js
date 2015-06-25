@@ -10,8 +10,9 @@ module.exports = function(grunt) {
     StoryPanelBg: ['story-1.png','story-2.png','story-3.png','story-4.png'],
     StoryPanelPics:  ['story-1-circle.jpg','story-2-circle.jpg', 'story-3-circle.jpg', 'story-4-circle.jpg'],
     StoryPanelPicsName: ['Mike & Zina', 'Vera & Maria', 'Grandma Zoya', 'Shor King'],
-    StoryPanelPicsDesc: ['How Zina and crew went to end of the world and found sacred mountain','Taiga exploration. How the crew got to know hay lovers','Meet Zoya and let\'s ride on her horse to the nearest store' ,'Get on board and let King show you around']
-  }
+    StoryPanelPicsDesc: ['How Zina and crew went to end of the world and met the Shorian King','Taiga exploration. How the crew got to know hay mowers','Meet Zoya and let\'s ride on her horse to the nearest store' ,'Get on board and let King show you around'],
+    StoryPanelPicsLink: ['how-zina-got-an-idea-to-visit-a7c2cbe922fe', 'one-day-in-ust-anzas-cc5bbdbdd034', 'how-zina-got-an-idea-to-visit-a7c2cbe922fe', 'one-day-in-ust-anzas-cc5bbdbdd034']
+  };
 
   var fs = require("fs");
   var reEJS = /.ejs$/;
@@ -24,6 +25,12 @@ module.exports = function(grunt) {
           tmp[i] = {
             options: indexEJS_options,
             src: './templates/'+ejsFiles[i], dest: './app/'+ejsFiles[i].replace(reEJS,".html")};
+        } 
+        else if( ejsFiles[i].indexOf('story')>-1 ){
+          tmp[i] = {
+          options: require( "./story.js" ).dataArray( "Stories/"+ejsFiles[i].replace(reEJS,".txt") ),
+          src: './templates/'+ejsFiles[i], dest: './app/'+ejsFiles[i].replace(reEJS,".html")};
+
         } else{
           tmp[i] = {src: './templates/'+ejsFiles[i], dest: './app/'+ejsFiles[i].replace(reEJS,".html")};
         }
@@ -145,6 +152,20 @@ module.exports = function(grunt) {
       }
     },
 
+    grunticon: {
+      myIcons: {
+        files: [{
+            expand: true,
+            cwd: 'source/icons/',
+            src: ['*.svg', '*.png'],
+            dest: "app/assets/fonts/"
+        }],
+        options: {
+          enhanceSVG: true
+        }
+      }
+    },
+
     // versioning this project on git automatically
     // grunt-shell allows you to execute shell commands from within this Gruntfile
     shell: {
@@ -167,6 +188,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-ejs');
+  grunt.loadNpmTasks('grunt-grunticon');
   
   // Register Grunt tasks
 
@@ -199,6 +221,10 @@ module.exports = function(grunt) {
   grunt.registerTask('deployProduction',[
     'buildProduction',
     'release'
+  ]);
+
+  grunt.registerTask('fonts',[
+    'grunticon'
   ]);
 
   grunt.registerTask('default',[

@@ -63,3 +63,17 @@ startSlider();
 	startSlider();
 
  });
+
+
+
+function autoPlayVideo(vcode, width, height){
+  $("#videoContainer").html('<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+}
+
+$('.trailer-descr').on('click', function(){
+	var width = $(this).width();
+	$(this).removeClass('show');
+	$(this).addClass('hide');
+	autoPlayVideo('vuOCLh3yFGM',width,630/1120*width);
+});
+
