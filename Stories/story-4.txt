@@ -1,16 +1,10 @@
 ###########
-Picture: assets/img/story-4/moon.png
+Picture: assets/img/story-4/cloud.jpg
 Text: none
 ID: none 
-Class: col-md-12 StoryBg RightBottom
+Class: col-md-12 StoryBg RightBottom ExtraExtraTall
 ###########
 
-###########
-Picture: assets/img/story-4/river-smog.png
-Text: none
-ID: none 
-Class: col-md-12 StoryBg CenterCenter
-###########
 
 ###########
 Picture: assets/img/story-4/forest-smog.png
@@ -21,7 +15,7 @@ Class: col-md-12 StoryBg RightBottom
 
 ###########
 Picture: assets/img/story-4/king-and-motor.png
-Text: This man's name is Mikhail but everybody knows him as King.<br>King is an expert in navigating the Mras-Su river.
+Text: <h4>This man's name is Mikhail but everybody knows him as King.<br>King is an expert in navigating the Mras-Su river.</h4>
 ID: none
 Class: col-md-12 StoryBg LeftBottom
 ###########
@@ -34,20 +28,23 @@ ID: none
 Class: col-md-12 StoryBg CenterCenter
 ###########
 
-
 ###########
-Picture: assets/img/story-4/kuvshinki.jpg
-Text: "That morning I went down the river.<br>It was early and there was a fog<br>I just turned on the left near the island.<br>There was a big stone.<br>And they stood there.<br>Two of them<br>The hair below the knee.<br>They were so beautiful. Terrifyingly beautifyl<br>Their hair shined and in their hands they hold a comb.<br>I turned<br>Looked behind<br>Nothing. Dissapeared<br>Since then I never go when it is a fog on the river."
+Picture: none
+Video: king-on-the-boat
+Text: none
 ID: none
 Class: col-md-12 StoryBg CenterCenter
 ###########
 
+
 ###########
-Picture: assets/img/story-4/rock.jpg
-Text: none
-ID: none 
-Class: col-md-12 StoryBg RightBottom
+Picture: assets/img/story-4/kuvshinki.jpg
+Text: <h4>"That morning I went down the river.<br>It was early and there was a fog<br>I just turned on the left near the island.<br>There was a big stone.<br>And they stood there.<br>Two of them<br>The hair below the knee.<br>They were so beautiful. Terrifyingly beautifyl<br>Their hair shined and in their hands they hold a comb.<br>I turned<br>Looked behind<br>Nothing. Dissapeared<br>Since then I never go when it is a fog on the river."</h4>
+ID: none
+Class: col-md-12 StoryBg CenterCenter
 ###########
+
+
 
 ###########
 Picture: assets/img/story-4/water-river.jpg
@@ -58,8 +55,16 @@ Class: col-md-12 StoryBg RightBottom
 
 ###########
 Picture: assets/img/story-4/rock-kuvshinki.jpg
-Text: For Shors to see mermaid is a bad sign<br>They believe that mermaid meets people to steal their soul.<br>After that encounter King got sick.<br>He is the one of a few who survived the encounter with the river spirits.
+Text: <h4>For Shors to see mermaid is a bad sign<br>They believe that mermaid meets people to steal their soul.<br>After that encounter King got sick.<br>He is the one of a few who survived the encounter with the river spirits.</h4>
 ID: none, 
+Class: col-md-12 StoryBg CenterCenter
+###########
+
+###########
+Picture: none
+Video: mermaid
+Text: none
+ID: none
 Class: col-md-12 StoryBg CenterCenter
 ###########
 

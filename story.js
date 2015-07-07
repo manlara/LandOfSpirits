@@ -14,15 +14,17 @@ var TestMe = {
 		.forEach(function (line){ 
 			var key = line.split(" ")==undefined ? "" : line.split(" ")[0].replace(":","");
 			//console.log('key: ',key);
-			var multi_index = line.replace(/"/g,"").replace(key+":","").trim().split("|");
+			var multi_index = line.replace(key+":","").trim().split("|");
 			for (var i=0; i<multi_index.length; i++){
 				
 				multi_index[i] = multi_index[i].trim();
 				if (multi_index[i]=="none") {multi_index[i] = "";}
 				if (multi_index[i]=="same" && i>0) {multi_index[i] = multi_index[0];}
+				//console.log('val: ',multi_index[i]);
 			}
 			if (key.indexOf("#")>-1) {
-				if (row_counter%2==0) {data_array.push(_.clone(data_object));}
+				//console.log('counter: ',row_counter%2);
+				if (row_counter%2==0) {data_array.push(_.clone(data_object)); data_object={};}
 				row_counter++;
 			} else if(key!="") {
 				data_object[key] = multi_index;

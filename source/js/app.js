@@ -18,7 +18,7 @@ function startSlider(){
 startSlider();
 
  
- $('.album').on("click", function(){
+ $('.gallery-album').on("click", function(){
  	var descr = $(this).attr('id');
  	
  	if (descr=="albumFaces") {
@@ -74,6 +74,7 @@ $('.trailer-descr').on('click', function(){
 	var width = $(this).width();
 	$(this).removeClass('show');
 	$(this).addClass('hide');
-	autoPlayVideo('vuOCLh3yFGM',width,630/1120*width);
+	//autoPlayVideo('vuOCLh3yFGM',width,630/1120*width);
+	autoPlayVideo('Efg-goEKPAU',width,630/1120*width);
 });
 

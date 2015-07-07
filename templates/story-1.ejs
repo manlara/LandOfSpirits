@@ -9,29 +9,9 @@
         <link rel="author" href="humans.txt">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
-    <body>
-
-    	<div class="StoryPage">
-    		<img class="img-responsive" src="assets/img/story-1/vera_walks.jpg" alt="">
-			<span>Aigan - sacred mountain</span>
-			<p>~1000 meters above the sea level mountain has 9 peaks...</p>
-    	</div>
-
-        <%for (var i=0; i<stories.length; i++){%>
-            <div class="row">
-            <%for (var j=0; j<stories[i].Picture.length; j++){%>
-                 <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>" style="background-image:url('<%=stories[i].Picture[j]%>');">
-                    <div class="StoryPage">
-                        <span><%-stories[i].Text[j]%></span>
-                    </div>
-                </div>
-            <%}%>
-            </div>                
-        <%}%>
-
-        <div style="">
-            <% include partials/video.ejs %>
-        </div>
+    <body style="background-color:white;">
+        
+        <%- include('partials/story.ejs', {storyNum: 1}); %>
 
         <% include partials/social.ejs %>
 
@@ -39,7 +19,7 @@
             <div class="col-md-12">
                 <span class="center-block" style="padding-top:50px;">
                     <img class="circled-img center-block" src="assets/img/read-on-medium-circles/mike-thinks.png">
-                    <div class="btn-medium"><a href="#">read story on medium</a></div>
+                    <div class="btn-medium"><a href="https://medium.com/@id_z/how-zina-got-an-idea-to-visit-a7c2cbe922fe" target="_blank">read story on medium</a></div>
                 </span>
             </div>   
         </div>
@@ -47,6 +27,7 @@
         <% include partials/footer.ejs %>
         
         <script src="assets/js/app.min.js"></script>
+        <!--
         <script>
             $(window).scroll(function() {
                 var scrolledY = $(window).scrollTop();
@@ -55,5 +36,6 @@
                 $('#scrollme3').css('background-position', 'left ' + ((scrolledY)) + 'px');
             });
         </script>
+        -->
     </body>
 </html>

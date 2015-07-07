@@ -2,11 +2,30 @@
 <%for (var i=0; i<stories.length; i++){%>
     <div class="row">
     <%for (var j=0; j<stories[i].Picture.length; j++){%>
-         <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>" style="background-image:url('<%=stories[i].Picture[j]%>');">
-            <div class="StoryPage">
-                <span><%-stories[i].Text[j]%></span>
-            </div>
-        </div>
+        <%if (stories[i].Video){%>
+            <%- include('video.ejs', {vidName: stories[i].Video[j]}); %>
+        <%} else{%>
+            <%if (stories[i].Img){%>
+                <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>">
+                    <%if (i==0 && j==0){%>
+                        <a class="story-logo" href="#"><img src="assets/fonts/png/logo-story-<%=storyNum%>-2x.png" alt=""></a>
+                    <%}%>
+                    <img class="img-responsive" src="<%=stories[i].Picture[j]%>" alt="">
+                    <div class="StoryPage">
+                        <span><%-stories[i].Text[j]%></span>
+                    </div>
+                </div>
+            <%} else{%>
+                <div class="<%=stories[i].Class[j]%>" id="<%=stories[i].ID[j]%>" style="background-image:url('<%=stories[i].Picture[j]%>');">
+                    <%if (i==0 && j==0){%>
+                        <a class="story-logo" href="index.html"><img src="assets/fonts/png/logo-story-<%=storyNum%>-2x.png" alt=""></a>
+                    <%}%>
+                    <div class="StoryPage">
+                        <span><%-stories[i].Text[j]%></span>
+                    </div>
+                </div>
+            <%}%>
+        <%}%>
     <%}%>
     </div>                
 <%}%>

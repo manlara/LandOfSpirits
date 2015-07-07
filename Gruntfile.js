@@ -8,9 +8,9 @@ module.exports = function(grunt) {
     crewName: ['Zina Semenova','Mike Bogatyrev','Maria Lavrentieva','Vera Bogatyreva','Manuel Lara','Eugine Teppoev','Nikolay Topakov','Anita Topakova'],
     crewDesc: ['project leader','cameraman, editor','cameraman','sound recorder, photographer','line producer','technical assistant, editor','local guide','local guide'],
     StoryPanelBg: ['story-1.png','story-2.png','story-3.png','story-4.png'],
-    StoryPanelPics:  ['story-1-circle.jpg','story-2-circle.jpg', 'story-3-circle.jpg', 'story-4-circle.jpg'],
-    StoryPanelPicsName: ['Mike & Zina', 'Vera & Maria', 'Grandma Zoya', 'Shor King'],
-    StoryPanelPicsDesc: ['How Zina and crew went to end of the world and met the Shorian King','Taiga exploration. How the crew got to know hay mowers','Meet Zoya and let\'s ride on her horse to the nearest store' ,'Get on board and let King show you around'],
+    StoryPanelPics:  ['story-1-circle-2x.png','story-2-circle-2x.png', 'story-3-circle-2x.png', 'story-4-circle-2x.png'],
+    StoryPanelPicsName: ['Mike & Zina', 'Vera & Maria', 'Grandma Zoe', 'Shor King'],
+    StoryPanelPicsDesc: ['How Zina and crew went to end of the world and met the Shorian King','Taiga exploration. How the crew got to know hay mowers','Meet Zoe and let\'s ride on her horse to the nearest store' ,'Get on board and let King show you around'],
     StoryPanelPicsLink: ['how-zina-got-an-idea-to-visit-a7c2cbe922fe', 'one-day-in-ust-anzas-cc5bbdbdd034', 'how-zina-got-an-idea-to-visit-a7c2cbe922fe', 'one-day-in-ust-anzas-cc5bbdbdd034']
   };
 
@@ -29,6 +29,12 @@ module.exports = function(grunt) {
         else if( ejsFiles[i].indexOf('story')>-1 ){
           tmp[i] = {
           options: require( "./story.js" ).dataArray( "Stories/"+ejsFiles[i].replace(reEJS,".txt") ),
+          src: './templates/'+ejsFiles[i], dest: './app/'+ejsFiles[i].replace(reEJS,".html")};
+
+        } 
+        else if( ejsFiles[i].indexOf('gallery')>-1 ){
+          tmp[i] = {
+          options: require( "./gallery.js" ).dataArray( "./Gallery/" ),
           src: './templates/'+ejsFiles[i], dest: './app/'+ejsFiles[i].replace(reEJS,".html")};
 
         } else{
@@ -116,6 +122,13 @@ module.exports = function(grunt) {
       },
       ejs: {
         files: ['templates/**/*.ejs'],
+        tasks: ['ejs'],
+        options: {
+          livereload: true
+        }
+      },
+      stories: {
+        files: ['Stories/*.txt','Gallery/*.txt'],
         tasks: ['ejs'],
         options: {
           livereload: true

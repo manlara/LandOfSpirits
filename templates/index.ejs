@@ -7,10 +7,9 @@
         <title>Land of Spirits</title>
         <link rel="stylesheet" href="assets/css/app.css">
         <link rel="author" href="humans.txt">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <script type="text/javascript">
         var map;
@@ -42,25 +41,18 @@
             Land of Spirits
         </div>
     </div>
+    <a name="about"></a>
     <div class="about">
         <h3>About</h3>
-        <p>Land of Spirits is a media project about endangered Shor people initiated by a small group of creatives. In the summer of 2013 they made a trip to the South of Western Siberia. There, deep in taiga, far away from civilization, more than 100 km from the nearest highway they visited Ust-Anzas village. The traditional lifestyle of Shors in Ust-Anzas is preserved almost untouched for centuries. They grow their own food in gardens, hunt on bears and moose, fish, pick pine nuts, wild berries and mushrooms. Some - have bees and delicious honey, most all have boats - major transport in Ust-Anzas.</p>
-        <p>
-            Every family has a few horses, cows and huski dogs. We met them in the busiest time of the year - July. Shors call July “pichen” which translates as a month of hay.
-Throughout most of our stay we witnessed how they prepared hay. With this harvest of hay their animals can survive another year.
-        </p>
-        <p>
-            We had no idea what was in store for us in Shoria but we were lucky to meet humble people that let us stay in their houses for free. In fact, one of our hoses - Grisha - moved out and slept in the storage area so that we could stay in the small house.
-We arrived unexpectedly but the people there gave us to try food, showed us around in exchange for a few shots of vodka. Living there among them made us realize how difficult it is to find secluded places like this one with untouched nature. These people do not have much of material things but they breath fresh air full of phito elements, eat a healthy diet and drink pure water from the springs. It makes them rich in a different way.
-        </p>
-        <p>
-            The major goal of our trip was to find stories about spirits. It is known that in the past Shors were animists. They worshiped the spirits of water “sug-ezi”, places, taiga ‘tag ezi” and had shamanic practices. We kept asking them about spirits. It was not easy but nevetherless we managed to record few fascinating stories.
-        </p>
-        <p>
-            We want to share our trip with you.
-        </p>
-    </div>
+        <p>Land of Spirits is a media project about endangered Shor people initiated by a small group of creatives. In the summer of 2013 they made a trip to the Mountainous Shoria, South of Western Siberia, Ust-Anzas village. This traditional settlement is still home to indigenous Shors who fluently speak their native language and keep  with their traditional way of living.</p> 
 
+        <p>The crew spent ten days outside of civilization without running water or electricity. During their visit in mid July, they witnessed the busiest time of the year when locals collect hay. This traditional routine reflected even in Shor language. July in Shor called “pichen” or a month of hay. Crew members spent a day with hay mowers at the sunny slopes of Taz Gol mount. The most revealing part of the trip was taiga exploration. The crew visited Dalny Kezek - a village deep in taiga where life style of its inhabitants have changed little since the 17 century.  As Siberian natives Shors still have animistic beliefs and see spirits as the guardians of their land. Therefore, the major goal of the trip was to collect the stories about taiga and water spirits - "tag ezi" and "sug ezi" which the crew successfully fulfilled.</p>
+        
+        <p>Today they are happy to share these fascinating stories together with a gallery and trailer with you.</p>
+                
+    </div>
+    
+    <a name="crew"></a>
     <div class="section-crew">
         <h3>Crew</h3>
 
@@ -69,7 +61,7 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                 <div class="row">
             <%}%>
             <div class="col-md-3">
-                <img class="participant center-block img-responsive" src="assets/img/<%=crewPics[i]%>.png" width="200" height="210" alt=""><br>
+                <img class="participant center-block img-responsive" src="assets/img/<%=crewPics[i]%>-2x.png" width="200" height="210" alt=""><br>
                 <div class="crew-descr">
                     <span><%=crewName[i]%></span>
                     <p><%=crewDesc[i]%></p>
@@ -82,40 +74,24 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
 
     </div>
     
-<!--MAP--> 
-<!--
-    <div class="index-map">
-        <h3>Map</h3>
-        <div id="map-canvas" class="center-block" style="width:500px;height:380px;"></div>
-    </div>
---> 
     
 <!--TRAILER-->
+    <a name="video"></a>
     <div class="section-trailer">
         <div class="trailer-descr show">
-            <img class="img-responsive trailer-img" src="assets/img/video-img.jpeg" alt="">
+            <img class="img-responsive trailer-img" src="assets/img/video-img-2x.jpg" alt="">
             <span class="section-title">Watch the Trailer</span>
         </div>
         <div class="trailer-vid" id="videoContainer">
         </div>
-        
-        <!--video-img.jpeg-->
-        <!--
-        
-        -->
-    </div><!--/section-pic-->   
-        
-        <!--video-img.jpeg-->
-        <!--
-        <iframe class="embed-responsive-item embed-video center-block" width="1120" height="630" src="https://www.youtube.com/embed/vuOCLh3yFGM" frameborder="0" allowfullscreen></iframe>
-        -->
-    </div><!--/section-pic-->   
+    </div><!--/section-pic-->    
 
     <div class="brief-history">
         <h3>Brief History of Shors</h3>
         <span><a href="https://medium.com/@id_z/a-brief-history-of-shors-ee713cb6f673" target="_blank">Read on medium</a></span>
     </div>
 
+    <a name="stories"></a>
     <div class="section-StoryPanel container-fluid">
         <div class="row">
             <%for (var i=0; i<StoryPanelPics.length; i++){%>
@@ -125,7 +101,7 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                         <span><%=StoryPanelPicsName[i]%></span>
                         <p><%-StoryPanelPicsDesc[i]%></p>
                     </div>
-                    <a href="https://medium.com/@id_z/<%=StoryPanelPicsLink[i]%>" class="StoryPanelButton btn btn-default" target="_blank"> Read More</a>
+                    <span><a href="story-<%=i+1%>.html" target="_blank">Read More</a></span>
                 </div>
             <%}%>
         </div>
@@ -133,26 +109,27 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
 
 
 <!--GALLERY-->
+            <a name="gallery"></a>
             <div class="section-gallery">
                 <h3>Gallery</h3>
-                <a href="#">Click here to see more pictures</a>  
+                <a href="gallery.html" target="_blank">Click here to see more pictures</a>  
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="assets/img/galleryIndex/luba-violet-flowers.png" alt="">
+                        <img src="assets/img/galleryIndex/luba-violet-flowers-2x.png" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/img/galleryIndex/king-flower.png" alt="">
+                        <img src="assets/img/galleryIndex/king-flower-2x.png" alt="">
                     </div>
                 </div>
                 <div class="center-block">
-                    <img src="assets/img/galleryIndex/eldar.png" alt="">
+                    <img class="galleryPic-bigger" src="assets/img/galleryIndex/eldar-2x.png" alt="">
                 </div>
                 <div class="row" style="margin-top:-30px;">
                     <div class="col-md-6">
-                        <img src="assets/img/galleryIndex/fedya.png" alt="">
+                        <img src="assets/img/galleryIndex/fedya-2x.png" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/img/galleryIndex/happy-dog.png" alt="">
+                        <img src="assets/img/galleryIndex/happy-dog-2x.png" alt="">
                     </div>
                 </div>
             </div>
@@ -161,9 +138,10 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
         <% include partials/social.ejs %>
 <!--THANKS-->
 
+        <a name="thanks"></a>
         <div class="section-thanks">
             <h3>Thanks</h3>
-            <p>Our crew says thank you for your interest and support to our project. </p>
+            <p>Our crew says thank you for your interest and support for our project. </p>
             <p>Without you this project would have never been possible.</p>
             <div class="mount">
                 <div class="row col-title">
@@ -180,7 +158,7 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                         Participants Of Promo Video
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color:rgba(255,255,255,0.1);padding:30px 0;">
                     <div class="col-md-3" style="margin-bottom:20px;">
                         <img src="assets/fonts/png/icon-dot.png" alt="">
                         <img style="margin:0 10px;" src="assets/fonts/png/icon-flower.png" alt="">
@@ -205,7 +183,7 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                     </div>    
                 </div><!--/.row-->
                 
-                <div class="row">
+                <div class="row thanks-col">
                     <div class="col-md-3">
                         <ul class="thanks-list list-unstyled">
                             <li>Nadezhda Kydymaeva</li>
@@ -213,13 +191,12 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                             <li>Dmitry Zotov</li>
                             <li>Chiltys Tannagasheva</li>
                             <li>Irina Nitkina</li>
-                            <li>Grigory</li>
                             <li>Evdokiya Topakova</li>
-                            <li>Tatiana (daughter) &amp; family</li> 
-                            <li>Svetlana (Hakassia)</li>
-                            <li>Feodr and his family(bee man) &amp; family</li> 
-                            <li>Gennady Sysoev (driver)</li>
+                            <li>Tatiana - a store owner &amp; her family</li> 
+                            <li>Beekeeper Feodr &amp; his family</li> 
+                            <li>Gennady Sysoev</li>
                             <li>Larisa Ermakova</li>
+                            <li>Vasily Elesin</li>
                         </ul> 
                     </div>    
 
@@ -240,6 +217,9 @@ We arrived unexpectedly but the people there gave us to try food, showed us arou
                             <li>Alexandra Tsirkel</li>
                             <li>Elena Kiskorova</li>
                             <li>Anna Hodgekinson</li>
+                            <li>Nikolay &amp; Olga Bogatyrev</li>
+                            <li>Lara &amp; Garcia families</li>
+                            <li>Semenov &amp; Kuznetsov extended families</li>
                         </ul>  
                     </div>    
         

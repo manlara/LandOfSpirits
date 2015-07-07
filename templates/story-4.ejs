@@ -9,9 +9,9 @@
         <link rel="author" href="humans.txt">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body style="background-color:white;">
 
-        <% include partials/story.ejs %>
+        <%- include('partials/story.ejs', {storyNum: 4}); %>
 
 
         <% include partials/social.ejs %>
@@ -19,8 +19,8 @@
         <div class="row">
             <div class="col-md-12">
                 <span class="center-block" style="padding-top:50px;">
-                    <img class="circled-img center-block" src="assets/img/read-on-medium-circles/mike-thinks.png">
-                    <div class="btn-medium"><a href="#">read story on medium</a></div>
+                    <img class="circled-img center-block" src="assets/img/read-on-medium-circles/shor-king-story-4.png">
+                    <div class="btn-medium"><a href="https://medium.com/@id_z/king-s-story-7bc83508e3a1" target="_blank">read story on medium</a></div>
                 </span>
             </div>   
         </div>

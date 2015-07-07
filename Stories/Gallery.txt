@@ -1,0 +1,5 @@
+###########
+Picture: assets/img/story-1/vera_walks.jpg
+Title: <p><h3><i class="story-circle"></i>Aigan - sacred mountain</h3>~ 1000 meters above the sea level<br>mountain has 9 peaks<br>Shors believe that on the top of the mountain<br>lives the major spirit - owner of the taiga.<br>No one is allowed to climb there.<br>There is a mirror door opens on the top<br>of Aigan when the spring is coming and<br>closes for the winter time.</p>
+Alt: none
+###########

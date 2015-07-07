@@ -9,18 +9,17 @@
         <link rel="author" href="humans.txt">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body style="background-color:white;">
 
-        <% include partials/navbar.ejs %>
-        <% include partials/story.ejs %>
+        <%- include('partials/story.ejs', {storyNum: 2}); %>
 
         <% include partials/social.ejs %>
 
         <div class="row">
             <div class="col-md-12">
                 <span class="center-block" style="padding-top:50px;">
-                    <img class="circled-img center-block" src="assets/img/read-on-medium-circles/mike-thinks.png">
-                    <div class="btn-medium"><a href="#">read story on medium</a></div>
+                    <img class="circled-img center-block" src="assets/img/read-on-medium-circles/king-looks.png">
+                    <div class="btn-medium"><a href="https://medium.com/@id_z/one-day-in-ust-anzas-cc5bbdbdd034" target="_blank">read story on medium</a></div>
                 </span>
             </div>   
         </div>
